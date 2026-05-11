@@ -36,7 +36,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx",
-    "app/(oficina)/dashboard/inventory/product-groups/page.jsx",
+    "app/(oficina)/dashboard/inventory/categories/page.jsx",
     "app/(oficina)/dashboard/inventory/inventory-adjustments/page.jsx"
   ],
   "exclude": [

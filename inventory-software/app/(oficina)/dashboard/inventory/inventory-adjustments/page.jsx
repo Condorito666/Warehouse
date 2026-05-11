@@ -1,9 +1,9 @@
 import React from 'react'
 
-function page() {
+function InventoryAdjustmentsPage() {
     return (
-        <div>page</div>
+        <div>InventoryAdjustmentsPage</div>
     )
 }
 
-export default page
+export default InventoryAdjustmentsPage
