@@ -2,6 +2,7 @@ import React from 'react';
 import DashboardBanner from '@/components/dashboard/DashboardBanner';
 import HomeNavbar from '@/components/dashboard/HomeNavbar';
 
+
 export default function HomeLayout({ children }) {
     return (
         <div className="flex flex-col h-full">

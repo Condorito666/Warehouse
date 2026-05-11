@@ -27,17 +27,17 @@ const Sidebar = ({ isOpen }) => {
 
   const navItems = [
     { name: 'Dashboard', href: '/dashboard/home/overview', icon: LayoutDashboard },
-    { 
-      name: 'Inventario', 
+    {
+      name: 'Inventario',
       icon: Package,
       subItems: [
-        { name: 'Productos', href: '/dashboard/home/inventory/products' },
-        { name: 'Categorías', href: '/dashboard/home/inventory/categories' },
-        { name: 'Movimientos', href: '/dashboard/home/inventory/movements' },
+        { name: 'Productos', href: '/dashboard/inventory/products' },
+        { name: 'Grupo de Productos', href: '/dashboard/inventory/product-groups' },
+        { name: 'Ajustes de Inventario', href: '/dashboard/inventory/inventory-adjustments' },
       ]
     },
-    { 
-      name: 'Ventas', 
+    {
+      name: 'Ventas',
       icon: ShoppingCart,
       subItems: [
         { name: 'Nueva Venta', href: '/dashboard/home/sales/new' },
@@ -82,10 +82,9 @@ const Sidebar = ({ isOpen }) => {
                         <ChevronRight className="h-4 w-4 text-slate-500 transition-transform" />
                       )}
                     </button>
-                    <div 
-                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        openMenus[item.name] ? 'max-h-48 opacity-100 mt-1 mb-2' : 'max-h-0 opacity-0'
-                      }`}
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${openMenus[item.name] ? 'max-h-48 opacity-100 mt-1 mb-2' : 'max-h-0 opacity-0'
+                        }`}
                     >
                       <div className="flex flex-col space-y-1 pl-11 pr-4">
                         {item.subItems.map((subItem) => (
