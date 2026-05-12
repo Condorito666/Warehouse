@@ -8,19 +8,19 @@ export default function OptionCards() {
             title: 'Grupos de Items',
             description: 'Crea múltiples variantes del mismo artículo usando Grupos de Items',
             icon: Layers,
-            href: '/dashboard/inventory/product-groups/new-group',
+            href: '/dashboard/inventory/categories/new-category',
             enabled: true
         },
         {
             title: 'Items',
             description: 'Crea artículos y servicios independientes que compras y vendes',
             icon: Package,
-            href: '/dashboard/inventory/products/new',
+            href: '/dashboard/inventory/products/new-product',
             enabled: true
         },
         {
-            title: 'Items Compuestos',
-            description: 'Agrupa artículos',
+            title: 'Pack de Productos',
+            description: 'Agrupa productos',
             icon: PackagePlus,
             href: '/dashboard/inventory/products/new-composite',
             enabled: true

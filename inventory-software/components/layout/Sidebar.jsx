@@ -32,7 +32,10 @@ const Sidebar = ({ isOpen }) => {
       icon: Package,
       subItems: [
         { name: 'Productos', href: '/dashboard/inventory/products' },
-        { name: 'Grupo de Productos', href: '/dashboard/inventory/product-groups' },
+        { name: 'Marcas', href: '/dashboard/inventory/brands' },
+        { name: 'Categorias', href: '/dashboard/inventory/categories' },
+        { name: 'Unidades de Medida', href: '/dashboard/inventory/units' },
+        { name: 'Tiendas', href: '/dashboard/inventory/warehouses' },
         { name: 'Ajustes de Inventario', href: '/dashboard/inventory/inventory-adjustments' },
       ]
     },

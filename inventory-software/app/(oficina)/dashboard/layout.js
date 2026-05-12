@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Sidebar from '@/components/layout/Sidebar';
 import Footer from '@/components/layout/Footer';
+import FormHeader from '@/components/Form/FormHeader';
 
 export default function DashboardLayout({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -21,7 +22,7 @@ export default function DashboardLayout({ children }) {
       <div className="flex flex-1 flex-col overflow-hidden relative">
         {/* Overlay for mobile sidebar */}
         {isSidebarOpen && (
-          <div 
+          <div
             className="fixed inset-0 z-40 bg-slate-900/50 backdrop-blur-sm md:hidden"
             onClick={() => setIsSidebarOpen(false)}
           />

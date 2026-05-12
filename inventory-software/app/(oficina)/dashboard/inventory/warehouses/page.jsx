@@ -1,12 +1,10 @@
 import React from 'react'
 import FixedHeader from '@/components/dashboard/FixedHeader'
 
-function ProductGroupsPage() {
+export default function Warehouses() {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-            <FixedHeader title='Categorias' newLink='/dashboard/inventory/categories/new-category' newText='Nueva Categoria' />
+            <FixedHeader title='Bodegas' newLink='/dashboard/inventory/warehouses/new-warehouse' newText='Nueva Bodega' />
         </div>
     )
 }
-
-export default ProductGroupsPage

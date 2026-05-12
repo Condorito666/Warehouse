@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import "../styles/tailwind.css";
 import "../styles/main.scss";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +24,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         {children}
-        <SpeedInsights />
+
       </body>
     </html>
   );

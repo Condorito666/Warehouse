@@ -5,7 +5,7 @@ import OptionCards from '@/components/dashboard/OptionCards'
 function page() {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-            <FixedHeader />
+            <FixedHeader title='Productos' newLink='/dashboard/inventory/products/new-product' newText='Nuevo Producto' />
             <div className="p-6 md:p-8 max-w-7xl mx-auto">
                 <div className="text-center mb-10 mt-8">
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">Agrega a tu inventario</h2>

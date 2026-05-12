@@ -1,11 +1,10 @@
-import React from 'react'
+import FormHeader from '@/components/Form/FormHeader';
+import React from 'react';
 
-function NewComposite() {
+export default function NewComposite() {
     return (
-        <div>NewComposite
-
+        <div>
+            <FormHeader title="Nuevo Producto Compuesto" href="/dashboard/inventory/products" />
         </div>
-    )
+    );
 }
-
-export default NewComposite
